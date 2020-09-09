@@ -42,4 +42,32 @@ public class Person {
 	
 	@OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
 	private List<Phone> phones;
+
+	public long getId() {
+		return id;
+	}
+
+	public String getFirstName() {
+		return FirstName;
+	}
+
+	public String getLastName() {
+		return LastName;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public LocalDate getBirthdate() {
+		return birthdate;
+	}
+
+	public List<Phone> getPhones() {
+		return phones;
+	}
+
+
+	
+
 }
